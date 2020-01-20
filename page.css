@@ -35,10 +35,14 @@ header{
 }
 h2{
    font-family: "Quicksand",sans-serif;
+   display: inline-block;
 }
 nav{
 	display: flex;
 	margin-right: -15px;
+}
+nav li{
+   display: inline-block;
 }
 /*li{
 	margin: 0 15px;
