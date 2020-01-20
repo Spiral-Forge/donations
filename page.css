@@ -7,6 +7,17 @@
    line-height: 30px;
    padding: 0px 10px;
  }
+ body{
+    /* background-image: url("./donbg.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; */
+
+ }
+
+#heads{
+   display: flex;
+}
 
  nav{
 	list-style: none;
@@ -93,3 +104,24 @@ li a{
    line-height: 30px;
    width: 30px;
  }
+
+ @media (max-width:1000px){
+   #heads{
+		padding: 20px 50px;
+      flex-direction: column;
+      text-align: center;
+	}
+	#heads h2{
+		margin-bottom: 15px;
+	}
+
+	#heads nav li{
+		font-size: 12px;
+		padding: 6px;
+		/* width: 20%; */
+		text-align: center;
+		display: inline-block;
+		align-items: center;
+		justify-content: center;
+   }
+}
