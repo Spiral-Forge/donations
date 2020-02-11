@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        
+        <style>
+            #map{
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLbZ-NFv9DDkRzk0gTkm3wlI&key=AIzaSyATdRBcGBuAogdzfwXIVqWanL6obdHKsZs" allowfullscreen></iframe>
+        
+        <div id="map">
+        </div>
+<script>
+    function initMap(){
+        var uluru = {lat: -25.344, lng: 131.036};
+        var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+    }
+        </script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB843ncST1U2RK_3TPouK_DidL_ACnlizA&callback=initMap">
+    </script>
+       
+    </body>
+</html>
